@@ -1,0 +1,13 @@
+trigger:
+  - main
+
+jobs:
+  - job: linux
+    pool:
+      vmImage: 'ubuntu-latest'
+  - job: mac
+    pool:
+      vmImage: 'macOS-latest'
+  - job: windows
+    pool:
+      vmImage: 'windows-latest'
